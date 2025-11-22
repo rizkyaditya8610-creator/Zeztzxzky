@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak Kami | Hubungi Kami</title>
+
+    <!-- Link Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #000; /* fallback jika video gagal loading */
+            color: #333;
+            overflow: hidden;
+        }
+
+        /* BACKGROUND VIDEO */
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .contact-container {
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85); /* sedikit transparan */
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            text-align: center;
+            z-index: 10;
+            position: relative;
+            backdrop-filter: blur(4px);
+        }
+
+        h1 {
+            color: #1a73e8;
+            margin-bottom: 5px;
+            font-size: 2.2em;
+        }
+
+        p.intro {
+            margin-bottom: 40px;
+            color: #444;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .social-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icon {
+            font-size: 1.8em;
+            margin-right: 20px;
+        }
+
+        .fa-tiktok { color: #000; }
+        .fa-whatsapp { color: #25D366; }
+
+        .social-text strong {
+            font-size: 1.1em;
+        }
+
+        .social-text small {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- VIDEO BACKGROUND -->
+    <video autoplay loop muted id="video-background">
+        <source src="kontak.mp4" type="video/mp4">
+    </video>
+
+    <div class="contact-container">
+        <h1>Kontak Kami</h1>
+        <p class="intro">Hubungi kami melalui platform media sosial dan pesan instan di bawah ini:</p>
+
+        <a href="https://www.tiktok.com/@kytokuu?_r=1&_t=ZS-91aLUM6Cl8e" target="_blank" class="social-link">
+            <i class="fab fa-tiktok social-icon"></i>
+            <div class="social-text">
+                <strong>TikTok</strong>
+                <small>@kytokuu?_r</small>
+            </div>
+        </a>
+
+        <a href="https://wa.me/6285141081830" target="_blank" class="social-link">
+            <i class="fab fa-whatsapp social-icon"></i>
+            <div class="social-text">
+                <strong>WhatsApp</strong>
+                <small>Kirim Pesan Langsung (Fast Respon)</small>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>

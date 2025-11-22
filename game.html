@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pintu Masuk ke Crazy Games</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #000; /* fallback jika video gagal */
+            color: #c5c6c7;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Background Video */
+        #video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .container {
+            padding: 40px;
+            background-color: rgba(12, 13, 16, 0.85);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+            max-width: 80%;
+            z-index: 10;
+            position: relative;
+            backdrop-filter: blur(4px);
+        }
+
+        h1 {
+            color: #66fcf1;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 0 0 5px rgba(102, 252, 241, 0.7);
+        }
+
+        p {
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            color: #a0a0a0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #45a29e;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #66fcf1;
+            color: #0b0c0f;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 252, 241, 0.4);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- VIDEO BACKGROUND -->
+    <video autoplay loop muted id="video-background">
+        <source src="game.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
+        <h1>💥 Saatnya Bermain Crazy Games! 💥</h1>
+        <p>Anda akan dibawa ke koleksi game browser paling seru, gila, dan adiktif di web.</p>
+
+        <a 
+            href="https://www.crazygames.com/" 
+            target="_blank" 
+            class="cta-button"
+        >
+            MULAI BERMAIN SEKARANG!
+        </a>
+
+        <p style="margin-top: 20px; font-size: 0.9em;">(Tautan akan terbuka di tab baru)</p>
+    </div>
+
+</body>
+</html>
